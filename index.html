@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type='text/javascript' src='./main.js'></script>
+</head>
+<body bgcolor='#ccffcc' onload='main();' onkeydown='handleKeydown(event);'>
+	<h1>tizen.filesystem Test</h1>
+	<h2>Please click buttons.</h2>
+	<br>
+
+	<table border='1' cellpadding='10px'>
+		<tr align='center'>
+			<td>Function</td>
+			<td>For</td>
+			<td>Button</td>
+		</tr>
+		<tr>
+			<td align='center'>tizen.filesystem.resolve</td>
+			<td>documents</td>
+			<td><input type='button' onclick='test0();' value='Click'></td>
+		</tr>
+		<tr>
+			<td align='center'>createDirectory</td>
+			<td>documents/SampleDir</td>
+			<td><input type='button' onclick='test1();' value='Click'></td>
+		</tr>
+		<tr>
+			<td align='center'>tizen.filesystem.resolve</td>
+			<td>documents/SampleDir</td>
+			<td><input type='button' onclick='test2();' value='Click'></td>
+		</tr>
+		<tr>
+			<td align='center'>createFile</td>
+			<td>documents/SampleDir/sampleFile.txt</td>
+			<td><input type='button' onclick='test3();' value='Click'></td>
+		</tr>
+		<tr>
+			<td align='center'>resolve</td>
+			<td>documents/SampleDir/sampleFile.txt</td>
+			<td><input type='button' onclick='test4();' value='Click'></td>
+		</tr>
+		<tr>
+			<td align='center'>write</td>
+			<td>documents/SampleDir/sampleFile.txt</td>
+			<td><input type='button' onclick='test5();' value='Click'></td>
+		</tr>
+		<tr>
+			<td align='center'>read</td>
+			<td>documents/SampleDir/sampleFile.txt</td>
+			<td><input type='button' onclick='test6();' value='Click'></td>
+		</tr>
+		<tr>
+			<td align='center'>deleteFile</td>
+			<td>documents/SampleDir/sampleFile.txt</td>
+			<td><input type='button' onclick='test7();' value='Click'></td>
+		</tr>
+		<tr>
+			<td align='center'>deleteDirectory</td>
+			<td>documents/sampleDir</td>
+			<td><input type='button' onclick='test8();' value='Click'></td>
+		</tr>
+		<tr>
+			<td align='center'>listFiles</td>
+			<td>documents</td>
+			<td><input type='button' onclick='test9();' value='Click'></td>
+		</tr>
+	</table>
+	
+	<br>
+	<h2>Result <input type='button' onclick='logClear();' value='Log Clear'></h2>
+	<h3 id='result'></h3>
+</body>
+</html>
